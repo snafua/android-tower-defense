@@ -6,10 +6,12 @@ using UnityEngine.UI;
 public class GameManagerBehavior : MonoBehaviour {
 
     public Text goldLabel;
-	private int gold;
     public Text waveLabel;
+
     public GameObject[] nextWaveLabels;
     public bool gameOver = false;
+
+    private int gold;
     private int wave;
 
     void Start () {
@@ -46,8 +48,8 @@ public class GameManagerBehavior : MonoBehaviour {
                 }
             }
 
-            waveLabel.text = "WAVE: " + (wave + 1);
-            //waveLabel.GetComponent<Text>().text = "WAVE: " + (wave + 1);
+            //waveLabel.text = "WAVE: " + (wave + 1);
+            waveLabel.GetComponent<Text>().text = "WAVE: " + wave;
         }
     }
 
