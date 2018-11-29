@@ -187,6 +187,7 @@
 -define:UNITY_TEAM_LICENSE
 -define:ENABLE_VSTU
 'Assets/GameManagerBehavior.cs'
+'Assets/HealthBar.cs'
 'Assets/MonsterData.cs'
 'Assets/MoveEnemy.cs'
 'Assets/Scripts/CameraShake.cs'

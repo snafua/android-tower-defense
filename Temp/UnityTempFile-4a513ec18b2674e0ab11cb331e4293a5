@@ -186,12 +186,15 @@
 -define:ENABLE_BURST_AOT
 -define:UNITY_TEAM_LICENSE
 -define:ENABLE_VSTU
+'Assets/EnemyDestructionDelegate.cs'
 'Assets/GameManagerBehavior.cs'
+'Assets/HealthBar.cs'
 'Assets/MonsterData.cs'
 'Assets/MoveEnemy.cs'
 'Assets/Scripts/CameraShake.cs'
 'Assets/Scripts/GameOver.cs'
 'Assets/Scripts/PlaceMonster.cs'
 'Assets/Scripts/Tutorial.cs'
+'Assets/ShootEnemies.cs'
 'Assets/SpawnEnemy.cs'
 -lib:'/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/unity'

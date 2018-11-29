@@ -7,6 +7,8 @@ public class MonsterLevel
 {
 	public int cost;
 	public GameObject visualization;
+    public GameObject bullet;
+    public float fireRate;
 }
 
 
@@ -16,7 +18,6 @@ public class MonsterData : MonoBehaviour {
     private MonsterLevel currentLevel;
 
 	//Unity lifecycle methods
-
 	void Start () {
 		
 	}

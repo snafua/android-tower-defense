@@ -18,16 +18,13 @@ public class PlaceMonster : MonoBehaviour {
 		
 	}
 
-	private bool CanPlaceMonster()
-	{
+	private bool CanPlaceMonster() {
 		int cost = monsterPrefab.GetComponent<MonsterData>().levels[0].cost;
         return monster == null && gameManager.Gold >= cost;
 	}
 
-	void OnMouseUp()
-	{
-		if (CanPlaceMonster())
-		{
+	void OnMouseUp() {
+		if (CanPlaceMonster()) {
 			monster = (GameObject)
 			  Instantiate(monsterPrefab, transform.position, Quaternion.identity);
 			AudioSource audioSource = gameObject.GetComponent<AudioSource>();
@@ -35,8 +32,7 @@ public class PlaceMonster : MonoBehaviour {
             gameManager.Gold -= monster.GetComponent<MonsterData>().CurrentLevel.cost;
         }
 
-        else if (CanUpgradeMonster())
-		{
+        else if (CanUpgradeMonster()) {
 			monster.GetComponent<MonsterData>().IncreaseLevel();
 			AudioSource audioSource = gameObject.GetComponent<AudioSource>();
 			audioSource.PlayOneShot(audioSource.clip);
@@ -44,17 +40,16 @@ public class PlaceMonster : MonoBehaviour {
         }
     }
 
-	private bool CanUpgradeMonster()
-	{
-		if (monster != null)
-		{
+	private bool CanUpgradeMonster() {
+		if (monster != null) {
 			MonsterData monsterData = monster.GetComponent<MonsterData>();
 			MonsterLevel nextLevel = monsterData.GetNextLevel();
-			if (nextLevel != null)
-			{
+		
+            if (nextLevel != null) {
                 return gameManager.Gold >= nextLevel.cost;
 			}
 		}
+
 		return false;
 	}
 

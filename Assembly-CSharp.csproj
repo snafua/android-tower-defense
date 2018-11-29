@@ -61,13 +61,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\BulletBehavior.cs" />
+    <Compile Include="Assets\EnemyDestructionDelegate.cs" />
     <Compile Include="Assets\GameManagerBehavior.cs" />
+    <Compile Include="Assets\HealthBar.cs" />
     <Compile Include="Assets\MonsterData.cs" />
     <Compile Include="Assets\MoveEnemy.cs" />
     <Compile Include="Assets\Scripts\CameraShake.cs" />
     <Compile Include="Assets\Scripts\GameOver.cs" />
     <Compile Include="Assets\Scripts\PlaceMonster.cs" />
     <Compile Include="Assets\Scripts\Tutorial.cs" />
+    <Compile Include="Assets\ShootEnemies.cs" />
     <Compile Include="Assets\SpawnEnemy.cs" />
     <None Include="Assets\Font\readme.txt" />
     <Reference Include="UnityEditor.StandardEvents">
