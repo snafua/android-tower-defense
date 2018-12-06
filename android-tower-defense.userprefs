@@ -1,0 +1,21 @@
+﻿<Properties StartupConfiguration="{18B45CF8-FFD9-2651-A51A-41C6CE4969C5}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PlaceMonster.cs">
+    <Files>
+      <File FileName="Assets/GameManagerBehavior.cs" Line="44" Column="24" />
+      <File FileName="Assets/MoveEnemy.cs" Line="40" Column="54" />
+      <File FileName="Assets/SpawnEnemy.cs" Line="25" Column="31" />
+      <File FileName="Assets/BulletBehavior.cs" Line="1" Column="1" />
+      <File FileName="Assets/EnemyDestructionDelegate.cs" Line="6" Column="26" />
+      <File FileName="Assets/HealthBar.cs" Line="1" Column="1" />
+      <File FileName="Assets/MonsterData.cs" Line="9" Column="33" />
+      <File FileName="Assets/ShootEnemies.cs" Line="52" Column="42" />
+      <File FileName="Assets/Scripts/PlaceMonster.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>
