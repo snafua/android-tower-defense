@@ -19,7 +19,7 @@ public class GameManagerBehavior : MonoBehaviour {
     private int health;
 
     void Start () {
-        Gold = 1000;
+        Gold = 200;
         Wave = 0;
         Health = 5;
 	}
@@ -35,9 +35,12 @@ public class GameManagerBehavior : MonoBehaviour {
 
 		set {
 			gold = value;
-			goldLabel.GetComponent<Text>().text = "GOLD: " + gold;
-		}
-	}
+            if (goldLabel != null)
+            {
+                goldLabel.GetComponent<Text>().text = "GOLD: " + gold;
+            }
+        }
+    }
 
     public int Wave {
         get {
@@ -53,7 +56,11 @@ public class GameManagerBehavior : MonoBehaviour {
                 }
             }
 
-            waveLabel.text = "WAVE: " +  (wave + 1);
+            if (
+                        waveLabel != null)
+            {
+                waveLabel.text = "WAVE: " + (wave + 1);
+            }
         }
     }
 
@@ -68,8 +75,11 @@ public class GameManagerBehavior : MonoBehaviour {
             }
 
             health = value;
-            healthLabel.text = "HEALTH: " + health;
-           
+            if (healthLabel != null)
+            {
+                healthLabel.text = "HEALTH: " + health;
+            }
+
             if (health <= 0 && !gameOver) {
                 gameOver = true;
                 GameObject gameOverText = GameObject.FindGameObjectWithTag("GameOver");

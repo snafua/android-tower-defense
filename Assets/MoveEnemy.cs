@@ -8,11 +8,15 @@ public class MoveEnemy : MonoBehaviour {
 	public GameObject[] waypoints;
 	private int currentWaypoint = 0;
 	private float lastWaypointSwitchTime;
-	public float speed = 1.0f;
+	public float speed;
+    public float baseSpeed = 1.0f;
 
-	void Start () {
+    private GameManagerBehavior gameManager;
+
+    void Start () {
 		lastWaypointSwitchTime = Time.time;
-	}
+        speed = (float)(baseSpeed * (1 + Mathf.Pow((gameManager.Wave - 1), 2) * 0.8));
+    }
 
     private void RotateIntoMoveDirection()
     {
